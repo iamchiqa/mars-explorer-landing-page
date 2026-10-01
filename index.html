@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Explorer - Wisata Luar Angkasa</title>
+
+    <!-- My Own Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+  </head>
+
+  <body>
+    <header>
+      <div class="jumbotron">
+        <h1>Mars Explorer</h1>
+        <p>
+          Program wisata simulasi menuju Planet Merah. Kenali perjalanan,
+          destinasi, dan persiapan sebelum berangkat ke Mars.
+        </p>
+        <button id="btnLihatDestinasi" type="button">Lihat Destinasi</button>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#destinasi">Destinasi</a></li>
+          <li><a href="#persiapan">Persiapan</a></li>
+          <li>
+            <!-- Profil Dicoding Chiqa Maharani -->
+            <a
+              href="https://www.dicoding.com/users/chiqamh/academies"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Profil Dicoding</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Konten utama -->
+      <div id="content">
+        <article id="about" class="card">
+          <h2>Tentang Mars Explorer</h2>
+          <img
+            src="image/mars-permukaan.jpg"
+            alt="Permukaan Mars dengan tanah dan bebatuan berwarna kemerahan"
+            class="featured-image"
+          >
+          <p>
+            Mars Explorer adalah simulasi program wisata antariksa yang
+            memperkenalkan perjalanan manusia menuju Mars. Program ini dibuat
+            untuk menggambarkan bagaimana rasanya merencanakan perjalanan ke
+            planet tetangga Bumi, mulai dari keberangkatan hingga tiba di
+            permukaan Planet Merah.
+          </p>
+          <p>
+            Mars dipilih karena merupakan planet yang paling memungkinkan
+            untuk dikunjungi manusia setelah Bulan. Jaraknya yang relatif
+            dekat serta kondisi permukaannya yang masih bisa dipelajari
+            membuat Mars menjadi tujuan utama eksplorasi luar angkasa saat
+            ini.
+          </p>
+        </article>
+
+        <article id="destinasi" class="card">
+          <h2>Destinasi Wisata di Mars</h2>
+          <p>
+            Mars memiliki beberapa lokasi dengan bentang alam yang unik dan
+            layak dikunjungi selama misi berlangsung.
+          </p>
+
+          <section>
+            <h3>Olympus Mons</h3>
+            <img
+              src="image/olympus-mons.webp"
+              alt="Gunung berapi Olympus Mons dilihat dari udara"
+              class="featured-image"
+            >
+            <p>
+              Gunung berapi terbesar di tata surya. Tingginya mencapai
+              sekitar tiga kali lipat Gunung Everest, menjadikannya salah
+              satu pemandangan paling menakjubkan yang bisa dilihat wisatawan
+              selama berada di Mars.
+            </p>
+          </section>
+
+          <section>
+            <h3>Valles Marineris</h3>
+            <img
+              src="image/valles-marineris.jpg"
+              alt="Ngarai Valles Marineris yang membentang panjang di Mars"
+              class="featured-image"
+            >
+            <p>
+              Sistem ngarai raksasa yang panjangnya melebihi lebar Amerika
+              Serikat. Kawasan ini cocok bagi wisatawan yang tertarik dengan
+              sejarah geologi dan lanskap ekstrem Planet Merah.
+            </p>
+          </section>
+        </article>
+
+        <article id="persiapan" class="card">
+          <h2>Persiapan Sebelum Berangkat</h2>
+          <p>
+            Perjalanan menuju Mars membutuhkan waktu sekitar tujuh hingga
+            sembilan bulan, sehingga setiap peserta perlu mempersiapkan diri
+            dengan matang sebelum keberangkatan.
+          </p>
+
+          <section>
+            <h3>Perlengkapan Wajib</h3>
+            <p>
+              Pakaian bertekanan (pressure suit), helm dengan suplai oksigen,
+              serta perangkat komunikasi menjadi perlengkapan dasar yang
+              harus dibawa setiap peserta selama berada di luar habitat.
+            </p>
+          </section>
+
+          <section>
+            <h3>Latihan Fisik</h3>
+            <p>
+              Karena gravitasi Mars hanya sekitar 38% dari gravitasi Bumi,
+              peserta menjalani program latihan fisik khusus agar tubuh
+              tetap kuat sebelum dan sesudah perjalanan.
+            </p>
+          </section>
+        </article>
+      </div>
+
+      <!-- Konten samping -->
+      <aside>
+        <article class="profile-card card">
+          <header>
+            <h2>Profil Kru</h2>
+            <p>Kapten Misi Mars Explorer</p>
+            <figure>
+              <img src="image/astronaut.avif" alt="Foto astronot kapten misi Mars Explorer">
+              <figcaption>Mr and Mrs Astronout</figcaption>
+            </figure>
+          </header>
+
+          <section>
+            <h3>Data Perjalanan</h3>
+            <table>
+              <tr>
+                <th>Jarak</th>
+                <td>225 juta km</td>
+              </tr>
+              <tr>
+                <th>Durasi</th>
+                <td>7-9 bulan</td>
+              </tr>
+              <tr>
+                <th>Gravitasi</th>
+                <td>38% gravitasi Bumi</td>
+              </tr>
+              <tr>
+                <th>Suhu rata-rata</th>
+                <td>-63&deg;C</td>
+              </tr>
+              <tr>
+                <th>Status</th>
+                <td class="status">Siap Berangkat</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+
+        <section class="card">
+          <h2>Hitung Mundur Keberangkatan</h2>
+          <p>Simulasi waktu menuju peluncuran roket berikutnya:</p>
+          <div id="countdown">01:00:00</div>
+
+          <button id="btnPesanMisi" type="button">Cek Pesan Misi</button>
+          <p id="pesanMisi"></p>
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Mars Explorer | Chiqa Maharani. <br>
+         Dibuat untuk submission Belajar Dasar Pemrograman Web, Asah 2026 - Dicoding.</p>
+      <p>Lebar layar Anda saat ini: <span id="lebarLayar"></span>px</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

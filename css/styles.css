@@ -1,0 +1,346 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #eee8e3;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(190, 64, 38, 0.18),
+      transparent 30%
+    ),
+    #09090c;
+  line-height: 1.7;
+}
+
+h2,
+h3 {
+  color: #e36545;
+}
+
+p {
+  color: #b9b4b0;
+}
+
+/* HEADER */
+header {
+  display: inline;
+}
+
+.jumbotron {
+  padding: 42px 20px 45px;
+  background:
+    linear-gradient(
+      135deg,
+      #130c0b,
+      #27110d,
+      #0b0b0f
+    );
+  color: #fff;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.jumbotron h1 {
+  margin: 0;
+  color: #f1e8e2;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-shadow: 0 0 25px rgba(216, 78, 48, 0.35);
+}
+
+.jumbotron p {
+  max-width: 600px;
+  margin: 10px auto 0;
+  font-size: 1rem;
+}
+
+.jumbotron button {
+  margin-top: 35px;
+  padding: 11px 26px;
+  border: none;
+  border-radius: 999px;
+  background-color: #c94b32;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.jumbotron button:hover {
+  background-color: #b94029;
+}
+
+/* NAVIGASI */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  padding: 7px;
+  background-color: #1b1719;
+  border-block: 2px solid #a83d2b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45), 0 1px 0 rgba(227, 101, 69, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+nav ul {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 15px;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  display: block;
+  padding: 8px 15px;
+  border-radius: 999px;
+  color: #ddd5d0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+nav a:hover {
+  color: #fff;
+  background-color: #c94b32;
+}
+
+nav a:focus-visible {
+  outline: 3px solid #f0a38e;
+  outline-offset: 3px;
+  background-color: #34201d;
+  color: #fff;
+}
+
+/* MAIN */
+main {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 35px 25px 60px;
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+#content {
+  flex: 7 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+aside {
+  flex: 3 1 0;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* CARD */
+.card {
+  width: 100%;
+  padding: 25px;
+  border-radius: 14px;
+  background-color: #141316;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* GAMBAR */
+.featured-image {
+  width: 100%;
+  max-height: 280px;
+  margin: 10px 0;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+/* PROFILE */
+.profile-card header {
+  text-align: center;
+}
+
+.profile-card figure {
+  margin: 15px 0 0;
+}
+
+.profile-card img {
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #211c1d;
+}
+
+.profile-card figcaption {
+  margin-top: 8px;
+  color: #77716e;
+  font-size: 0.85rem;
+}
+
+.profile-card h2 {
+  color: #eee6e1;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+th {
+  color: #77716e;
+  font-weight: 500;
+}
+
+td {
+  color: #d8d1cc;
+}
+
+.status {
+  color: #72d59a;
+  font-weight: 700;
+}
+
+/* Timer Countdown */
+#countdown {
+  margin: 15px 0;
+  padding: 14px;
+  border-radius: 8px;
+  background-color: #0c0b0e;
+  color: #df6041;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+/* BUTTON */
+#btnPesanMisi {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 999px;
+  background-color: #c94b32;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#btnPesanMisi:hover {
+  background-color: #b94029;
+}
+
+#btnPesanMisi:focus-visible {
+  outline: 3px solid #f0a38e;
+  outline-offset: 3px;
+}
+
+#pesanMisi {
+  margin-top: 10px;
+  color: #99938f;
+  font-size: 0.9rem;
+}
+
+/* FOOTER */
+footer {
+  padding: 30px 25px;
+  color: #fff;
+  background-color: #060608;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+footer p {
+  margin: 4px 0;
+  color: #6f6a67;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  #content,
+  aside {
+    width: 100%;
+    flex-basis: auto;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 6px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+    padding-inline: 0.5rem;
+  }
+
+  nav a {
+    padding: 7px 9px;
+    font-size: 0.75rem;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+
+  .jumbotron {
+    padding: 32px 15px 35px;
+  }
+
+  .jumbotron h1 {
+    font-size: 2.2rem;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
